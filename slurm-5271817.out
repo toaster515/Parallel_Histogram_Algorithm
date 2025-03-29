@@ -1,0 +1,50 @@
+/var/spool/slurmd/job5271817/slurm_script: line 20: [: missing `]'
+We seem to be in the right place.
+~/project/project/build ~/project/project
+Compiling
+Found OpenMP, building parallel part.
+Found MPI
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/adp12/project/project/build
+[ 13%] Built target utils
+[ 20%] Built target student_solution
+[ 33%] Built target orderedio
+[ 40%] Built target datageneration
+[ 53%] Built target sorter
+[ 66%] Built target utiltests
+[ 73%] Built target test_helpers
+[ 86%] Built target student_tests
+[100%] Built target main_tests
+Testing
+[==========] Running 5 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from rebalance
+[ RUN      ] rebalance.correct
+[       OK ] rebalance.correct (9 ms)
+[ RUN      ] rebalance.balanced
+[       OK ] rebalance.balanced (11 ms)
+[----------] 2 tests from rebalance (20 ms total)
+
+[----------] 1 test from findSplitters
+[ RUN      ] findSplitters.balanced
+[       OK ] findSplitters.balanced (7 ms)
+[----------] 1 test from findSplitters (7 ms total)
+
+[----------] 1 test from moveData
+[ RUN      ] moveData.correct
+
+RESULTS: One-Sided
+[       OK ] moveData.correct (5 ms)
+[----------] 1 test from moveData (5 ms total)
+
+[----------] 1 test from sort
+[ RUN      ] sort.correct
+[       OK ] sort.correct (0 ms)
+[----------] 1 test from sort (0 ms total)
+
+[----------] Global test environment tear-down
+Finalizing MPI...
+[==========] 5 tests from 4 test cases ran. (33 ms total)
+[  PASSED  ] 5 tests.
+Benchmarking

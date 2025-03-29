@@ -1,0 +1,8 @@
+RESULTS: One-Sided
+RESULTS: Total_Data : 68443292
+RESULTS: Duration_Rebalance 0.33637 s
+RESULTS: Duration_Sort_1 0.156853 s
+RESULTS: Duration_Splitters 0.0636165 s
+RESULTS: Duration_Move 1.35426 s
+RESULTS: Duration_Sort_2 0.0925054 s
+RESULTS: Duration_Total 2.00361 s

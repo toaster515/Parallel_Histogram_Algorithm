@@ -1,0 +1,8 @@
+RESULTS: Point-Point
+RESULTS: Total_Data : 17560371
+RESULTS: Duration_Rebalance 0.0973635 s
+RESULTS: Duration_Sort_1 0.160774 s
+RESULTS: Duration_Splitters 0.0587484 s
+RESULTS: Duration_Move 0.485034 s
+RESULTS: Duration_Sort_2 0.0884119 s
+RESULTS: Duration_Total 0.890331 s

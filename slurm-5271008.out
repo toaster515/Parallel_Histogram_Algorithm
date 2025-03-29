@@ -1,0 +1,103 @@
+/var/spool/slurmd/job5271008/slurm_script: line 20: [: missing `]'
+We seem to be in the right place.
+~/project/project/build ~/project/project
+Compiling
+-- The C compiler identification is GNU 7.3.1
+-- The CXX compiler identification is GNU 7.3.1
+-- Check for working C compiler: /opt/rh/devtoolset-7/root/bin/cc
+-- Check for working C compiler: /opt/rh/devtoolset-7/root/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /opt/rh/devtoolset-7/root/bin/c++
+-- Check for working CXX compiler: /opt/rh/devtoolset-7/root/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+-- Found OpenMP: TRUE (found version "4.5")  
+Found OpenMP, building parallel part.
+-- Found MPI_C: /usr/lib64/mpich-3.2/lib/libmpi.so (found version "3.1") 
+-- Found MPI_CXX: /usr/lib64/mpich-3.2/lib/libmpicxx.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+Found MPI
+-- Found GTest: /usr/lib64/libgtest.a  
+-- Found GBench: /usr/lib64/libbenchmark.a  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/adp12/project/project/build
+Scanning dependencies of target utils
+[  6%] Building CXX object utils/CMakeFiles/utils.dir/src/databasics.cpp.o
+[ 13%] Linking CXX static library ../lib/libutils.a
+[ 13%] Built target utils
+Scanning dependencies of target student_solution
+[ 20%] Building CXX object CMakeFiles/student_solution.dir/src/solution.cpp.o
+[ 20%] Built target student_solution
+Scanning dependencies of target datageneration
+[ 26%] Building CXX object utils/CMakeFiles/datageneration.dir/src/datageneration.cpp.o
+[ 26%] Built target datageneration
+Scanning dependencies of target orderedio
+[ 33%] Building C object utils/CMakeFiles/orderedio.dir/src/orderedio.c.o
+[ 40%] Linking C static library ../lib/liborderedio.a
+[ 40%] Built target orderedio
+Scanning dependencies of target sorter
+[ 46%] Building CXX object CMakeFiles/sorter.dir/src/main_sort.cpp.o
+[ 53%] Linking CXX executable bin/sorter
+[ 53%] Built target sorter
+Scanning dependencies of target utiltests
+[ 60%] Building CXX object utils/CMakeFiles/utiltests.dir/tests/utiltests.cpp.o
+[ 66%] Linking CXX executable ../bin/utiltests
+[ 66%] Built target utiltests
+Scanning dependencies of target test_helpers
+[ 73%] Building CXX object tests/CMakeFiles/test_helpers.dir/test_helpers.cpp.o
+[ 73%] Built target test_helpers
+Scanning dependencies of target student_tests
+[ 80%] Building CXX object tests/CMakeFiles/student_tests.dir/student_tests.cpp.o
+[ 86%] Linking CXX executable ../bin/student_tests
+[ 86%] Built target student_tests
+Scanning dependencies of target main_tests
+[ 93%] Building CXX object tests/CMakeFiles/main_tests.dir/main_tests.cpp.o
+[100%] Linking CXX executable ../bin/main_tests
+[100%] Built target main_tests
+Testing
+[==========] Running 5 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from rebalance
+[ RUN      ] rebalance.correct
+[       OK ] rebalance.correct (8 ms)
+[ RUN      ] rebalance.balanced
+[       OK ] rebalance.balanced (10 ms)
+[----------] 2 tests from rebalance (18 ms total)
+
+[----------] 1 test from findSplitters
+[ RUN      ] findSplitters.balanced
+[       OK ] findSplitters.balanced (5 ms)
+[----------] 1 test from findSplitters (5 ms total)
+
+[----------] 1 test from moveData
+[ RUN      ] moveData.correct
+[       OK ] moveData.correct (4 ms)
+[----------] 1 test from moveData (4 ms total)
+
+[----------] 1 test from sort
+[ RUN      ] sort.correct
+[       OK ] sort.correct (0 ms)
+[----------] 1 test from sort (0 ms total)
+
+[----------] Global test environment tear-down
+Finalizing MPI...
+[==========] 5 tests from 4 test cases ran. (28 ms total)
+[  PASSED  ] 5 tests.
+Benchmarking

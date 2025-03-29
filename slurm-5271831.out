@@ -1,0 +1,49 @@
+/var/spool/slurmd/job5271831/slurm_script: line 20: [: missing `]'
+We seem to be in the right place.
+~/project/project/build ~/project/project
+Compiling
+Found OpenMP, building parallel part.
+-- Could NOT find MPI_CXX (missing: MPI_CXX_WORKS) 
+-- Could NOT find MPI (missing: MPI_CXX_FOUND) (found version "3.1")
+CMake Error at cmake/cs484common.cmake:38 (message):
+  Could not find MPI
+Call Stack (most recent call first):
+  CMakeLists.txt:13 (include)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/adp12/project/project/build/CMakeFiles/CMakeOutput.log".
+See also "/home/adp12/project/project/build/CMakeFiles/CMakeError.log".
+Compilation failed.
+Testing
+[==========] Running 5 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from rebalance
+[ RUN      ] rebalance.correct
+[       OK ] rebalance.correct (9 ms)
+[ RUN      ] rebalance.balanced
+[       OK ] rebalance.balanced (10 ms)
+[----------] 2 tests from rebalance (20 ms total)
+
+[----------] 1 test from findSplitters
+[ RUN      ] findSplitters.balanced
+[       OK ] findSplitters.balanced (6 ms)
+[----------] 1 test from findSplitters (6 ms total)
+
+[----------] 1 test from moveData
+[ RUN      ] moveData.correct
+
+RESULTS: Point-Point
+[       OK ] moveData.correct (4 ms)
+[----------] 1 test from moveData (4 ms total)
+
+[----------] 1 test from sort
+[ RUN      ] sort.correct
+[       OK ] sort.correct (1 ms)
+[----------] 1 test from sort (1 ms total)
+
+[----------] Global test environment tear-down
+Finalizing MPI...
+[==========] 5 tests from 4 test cases ran. (31 ms total)
+[  PASSED  ] 5 tests.
+Benchmarking

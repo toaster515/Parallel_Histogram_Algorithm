@@ -1,0 +1,7 @@
+RESULTS: Total_Data : 18808669
+RESULTS: Duration_Rebalance 0.0862385 s
+RESULTS: Duration_Sort_1 0.172458 s
+RESULTS: Duration_Splitters 0.0564552 s
+RESULTS: Duration_Move 0.370949 s
+RESULTS: Duration_Sort_2 0.0913574 s
+RESULTS: Duration_Total 0.777458 s

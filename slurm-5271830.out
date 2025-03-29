@@ -1,0 +1,55 @@
+/var/spool/slurmd/job5271830/slurm_script: line 20: [: missing `]'
+We seem to be in the right place.
+~/project/project/build ~/project/project
+Compiling
+Found OpenMP, building parallel part.
+Found MPI
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/adp12/project/project/build
+[ 13%] Built target utils
+Scanning dependencies of target student_solution
+[ 20%] Building CXX object CMakeFiles/student_solution.dir/src/solution.cpp.o
+[ 20%] Built target student_solution
+[ 33%] Built target orderedio
+[ 40%] Built target datageneration
+[ 46%] Linking CXX executable bin/sorter
+[ 53%] Built target sorter
+[ 66%] Built target utiltests
+[ 73%] Built target test_helpers
+[ 80%] Linking CXX executable ../bin/student_tests
+[ 86%] Built target student_tests
+[ 93%] Linking CXX executable ../bin/main_tests
+[100%] Built target main_tests
+Testing
+[==========] Running 5 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from rebalance
+[ RUN      ] rebalance.correct
+[       OK ] rebalance.correct (9 ms)
+[ RUN      ] rebalance.balanced
+[       OK ] rebalance.balanced (9 ms)
+[----------] 2 tests from rebalance (18 ms total)
+
+[----------] 1 test from findSplitters
+[ RUN      ] findSplitters.balanced
+[       OK ] findSplitters.balanced (6 ms)
+[----------] 1 test from findSplitters (6 ms total)
+
+[----------] 1 test from moveData
+[ RUN      ] moveData.correct
+
+RESULTS: Point-Point
+[       OK ] moveData.correct (3 ms)
+[----------] 1 test from moveData (3 ms total)
+
+[----------] 1 test from sort
+[ RUN      ] sort.correct
+[       OK ] sort.correct (0 ms)
+[----------] 1 test from sort (0 ms total)
+
+[----------] Global test environment tear-down
+Finalizing MPI...
+[==========] 5 tests from 4 test cases ran. (28 ms total)
+[  PASSED  ] 5 tests.
+Benchmarking
